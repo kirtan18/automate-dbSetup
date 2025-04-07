@@ -9,7 +9,7 @@ module.exports = {
     DB_PORT: process.env.DB_PORT,
     DB_PASSWORD: process.env.DB_PASSWORD,
     DUMP_FILE: process.env.DUMP_FILE,
-    DOWNLOADS_PATH: path.join(os.homedir(), "Downloads", process.env.DUMP_FILE),
+    DOWNLOADS_PATH: process.env.DUMP_FILE,
     DBEAVER_CONFIG_PATH: path.join(
         process.env.APPDATA,
         "DBeaverData",
